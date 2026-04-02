@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>❤️ AI หัวใจ</h2>
+
+<input id="msg" placeholder="พิมพ์..." />
+<button onclick="send()">ส่ง</button>
+
+<div id="chat"></div>
+
+<script>
+function send(){
+    let input = document.getElementById("msg");
+    let chat = document.getElementById("chat");
+
+    let text = input.value;
+    chat.innerHTML += "<p>คุณ: " + text + "</p>";
+
+    let reply = "เราอยู่ตรงนี้นะ ❤️";
+    chat.innerHTML += "<p>AI: " + reply + "</p>";
+
+    input.value = "";
+}
+</script>
+
+</body>
+</html>
